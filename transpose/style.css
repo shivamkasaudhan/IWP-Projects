@@ -1,0 +1,19 @@
+form input{
+    padding: 0 5px 5px;
+
+    margin: 0 5px 5px;
+    height: 30px;
+    width: 70px;
+}
+table{
+    width: auto; 
+    border-collapse: collapse;
+    color: black;
+}
+th,td{
+    width: 20px;
+    height: 10px;
+    margin: 0;
+    border: 2px solid black;
+    text-align: center;
+}
