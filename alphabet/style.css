@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans:wght@300&display=swap');
+*{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+body{
+    width: fit-content;
+    background-color:rgb(47, 47, 40);
+}
+h1{
+    color: antiquewhite;
+    font-size: 25px;
+    background-color: rgb(33, 33, 33);
+    width: 218.5vh;
+    justify-content: center;
+    text-align: center;
+    font-weight:bolder;
+}
+div {
+    display: flex;
+    padding: 10px;
+    margin: 50px;
+    margin-left: 400px;
+    width: 100vh;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    filter: blur(50%);
+
+}
+
+span {
+    position: relative;
+    padding: 50px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.line1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+span[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.line1 span[data-text="A"]:hover::before {
+    content: "APPLE";
+    font-size: 25px;
+}
+
+.line1 span[data-text="B"]:hover::before {
+    content: "BOY";
+    font-size: 25px;
+}
+.line1 span[data-text="C"]:hover::before {
+    content: "CAT";
+    font-size: 25px;
+}
+
+.line1 span[data-text="D"]:hover::before {
+    content: "DOG";
+    font-size: 25px;
+}
+
+.line1 span[data-text="E"]:hover::before {
+    content: "EGG";
+    font-size: 25px;
+}
+
+.line1 span[data-text="F"]:hover::before {
+    content: "FOX";
+    font-size: 25px;
+}
+
+.line1 span[data-text="G"]:hover::before {
+    content: "GUN";
+    font-size: 25px;
+}
+
+.line1 span[data-text="H"]:hover::before {
+    content: "HORSE";
+    font-size: 25px;
+}
+
+.line1 span[data-text="I"]:hover::before {
+    content: "ICE";
+    font-size: 25px;
+}
+
+.line1 span[data-text="J"]:hover::before {
+    content: "JOKER";
+    font-size: 25px;
+}
+
+.line1 span[data-text="K"]:hover::before {
+    content: "KITE";
+    font-size: 25px;
+}
+
+.line1 span[data-text="L"]:hover::before {
+    content: "LION";
+    font-size: 25px;
+}
+
+.line1 span[data-text="M"]:hover::before {
+    content: "MONKEY";
+    font-size: 22px;
+}
+
+.line1 span[data-text="N"]:hover::before {
+    content: "NEWT";
+    font-size: 25px;
+}
+
+.line1 span[data-text="O"]:hover::before {
+    content: "OWL";
+    font-size: 25px;
+}
+
+.line1 span[data-text="P"]:hover::before {
+    content: "PARROT";
+    font-size: 24px;
+}
+
+.line1 span[data-text="Q"]:hover::before {
+    content: "QUOKKA";
+    font-size: 22px;
+}
+
+.line1 span[data-text="R"]:hover::before {
+    content: "RABBIT";
+    font-size: 25px;
+}
+
+.line1 span[data-text="S"]:hover::before {
+    content: "SNAKE";
+    font-size: 25px;
+}
+
+.line1 span[data-text="T"]:hover::before {
+    content: "TIGER";
+    font-size: 25px;
+}
+
+.line1 span[data-text="U"]:hover::before {
+    content: "UMBRELLA";
+    font-size: 18px;
+}
+
+.line1 span[data-text="V"]:hover::before {
+    content: "VAN";
+    font-size: 25px;
+}
+
+.line1 span[data-text="W"]:hover::before {
+    content: "WATCH";
+    font-size: 25px;
+}
+
+.line1 span[data-text="X"]:hover::before {
+    content: "X-RAY";
+    font-size: 25px;
+}
+
+.line1 span[data-text="Y"]:hover::before {
+    content: "YAK";
+    font-size: 25px;
+}
+
+.line1 span[data-text="Z"]:hover::before {
+    content: "ZEBRA";
+    font-size: 25px;
+}
