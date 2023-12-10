@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student_details xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="StudentDetailsSchema.xsd">
+    <student regNumber="12345">
+        <name>
+            <firstName>John</firstName>
+            <lastName>Doe</lastName>
+        </name>
+        <department>Computer Science</department>
+        <address>123 Main St, City</address>
+        <phoneNumber>123-4567</phoneNumber>
+    </student>
+    <student regNumber="67890">
+        <name>
+            <firstName>Jane</firstName>
+            <lastName>Smith</lastName>
+        </name>
+        <department>Electrical Engineering</department>
+        <address>456 Oak St, Town</address>
+        <phoneNumber>987-6543</phoneNumber>
+    </student>
+</student_details>

@@ -3,40 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphabet</title>
-    <link rel="stylesheet" href="style.css">
+    <title>English Alphabet Chart</title>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+        
+        map area {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>A 2 Z</h1>
-    </header>
-    <div class="line1">
-        <span class="letter" data-text="A"></span>
-        <span class="letter" data-text="B"></span>
-        <span class="letter" data-text="C"></span>
-        <span class="letter" data-text="D"></span>
-        <span class="letter" data-text="E"></span>
-        <span class="letter" data-text="F"></span>
-        <span class="letter" data-text="G"></span>
-        <span class="letter" data-text="H"></span>
-        <span class="letter" data-text="I"></span>
-        <span class="letter" data-text="J"></span>
-        <span class="letter" data-text="K"></span>
-        <span class="letter" data-text="L"></span>
-        <span class="letter" data-text="M"></span>
-        <span class="letter" data-text="N"></span>
-        <span class="letter" data-text="O"></span>
-        <span class="letter" data-text="P"></span>
-        <span class="letter" data-text="Q"></span>
-        <span class="letter" data-text="R"></span>
-        <span class="letter" data-text="S"></span>
-        <span class="letter" data-text="T"></span>
-        <span class="letter" data-text="U"></span>
-        <span class="letter" data-text="V"></span>
-        <span class="letter" data-text="W"></span>
-        <span class="letter" data-text="X"></span>
-        <span class="letter" data-text="Y"></span>
-        <span class="letter" data-text="Z"></span>
-    </div>
+    <h1>English Alphabet Chart</h1>
+    <img src="alphabet.png" alt="English Alphabet" usemap="#alphabetMap">
+    
+    <map name="alphabetMap">
+        <area shape="rect" coords="0,0,50,50" alt="A" href="#" onclick="showExample('apple.jpg')">
+        <area shape="rect" coords="50,0,100,50" alt="B" href="#" onclick="showExample('ball.jpg')">
+        <area shape="rect" coords="100,0,150,50" alt="C" href="#" onclick="showExample('cat.jpg')">
+        <area shape="rect" coords="150,0,200,50" alt="D" href="#" onclick="showExample('dog.jpg')">
+        <area shape="rect" coords="200,0,250,50" alt="E" href="#" onclick="showExample('elephant.jpg')">
+        <area shape="rect" coords="250,0,300,50" alt="F" href="#" onclick="showExample('fish.jpg')">
+        <area shape="rect" coords="300,0,350,50" alt="G" href="#" onclick="showExample('giraffe.jpg')">
+        <area shape="rect" coords="350,0,400,50" alt="H" href="#" onclick="showExample('hat.jpg')">
+        <area shape="rect" coords="400,0,450,50" alt="I" href="#" onclick="showExample('icecream.jpg')">
+        <area shape="rect" coords="450,0,500,50" alt="J" href="#" onclick="showExample('jaguar.jpg')">
+        <area shape="rect" coords="500,0,550,50" alt="K" href="#" onclick="showExample('kite.jpg')">
+        <area shape="rect" coords="550,0,600,50" alt="L" href="#" onclick="showExample('lion.jpg')">
+        <area shape="rect" coords="600,0,650,50" alt="M" href="#" onclick="showExample('monkey.jpg')">
+        <area shape="rect" coords="650,0,700,50" alt="N" href="#" onclick="showExample('nest.jpg')">
+        <area shape="rect" coords="700,0,750,50" alt="O" href="#" onclick="showExample('orange.jpg')">
+        <area shape="rect" coords="750,0,800,50" alt="P" href="#" onclick="showExample('penguin.jpg')">
+        <area shape="rect" coords="800,0,850,50" alt="Q" href="#" onclick="showExample('queen.jpg')">
+        <area shape="rect" coords="850,0,900,50" alt="R" href="#" onclick="showExample('rabbit.jpg')">
+        <area shape="rect" coords="900,0,950,50" alt="S" href="#" onclick="showExample('snake.jpg')">
+        <area shape="rect" coords="950,0,1000,50" alt="T" href="#" onclick="showExample('tree.jpg')">
+        <area shape="rect" coords="1000,0,1050,50" alt="U" href="#" onclick="showExample('umbrella.jpg')">
+    </map>
+    
+    <div id="exampleImage"></div>
+    
+    <script>
+        function showExample(imageName) {
+            document.getElementById("exampleImage").innerHTML = "<img src='" + imageName + "' alt='Example Image'>";
+        }
+    </script>
 </body>
 </html>

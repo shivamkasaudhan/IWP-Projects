@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="student_details" type="studentDetailsType"/>
+
+    <xs:complexType name="studentDetailsType">
+        <xs:sequence>
+            <xs:element name="student" type="studentType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="studentType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType"/>
+            <xs:element name="department" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="phoneNumber" type="phoneNumberType"/>
+        </xs:sequence>
+        <xs:attribute name="regNumber" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="nameType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="phoneNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}-\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

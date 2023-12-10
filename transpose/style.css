@@ -1,19 +1,25 @@
-form input{
-    padding: 0 5px 5px;
-
-    margin: 0 5px 5px;
-    height: 30px;
-    width: 70px;
-}
-table{
-    width: auto; 
-    border-collapse: collapse;
-    color: black;
-}
-th,td{
-    width: 20px;
-    height: 10px;
-    margin: 0;
-    border: 2px solid black;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    margin: 50px;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
